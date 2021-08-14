@@ -1,0 +1,36 @@
+.header {
+  height: 59px;
+  max-width: 1440px;
+  margin: 35px auto;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hamburger {
+  height: 59px;
+  width: 59px;
+  transition: 0.5s;
+  background-image: url(../../../assets/icons/hamburger.svg);
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.points {
+  height: 59px;
+  min-width: 59px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 3.125rem;
+  color: #b3b2b2;
+
+  font-family: "Gill Sans MT", sans-serif;
+}
