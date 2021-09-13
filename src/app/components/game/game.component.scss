@@ -1,0 +1,144 @@
+main {
+  max-width: 1440px;
+
+  padding-top: 30px;
+  margin: 0 auto;
+
+  .text {
+    font-size: 3.125rem;
+
+    text-transform: capitalize;
+    text-align: center;
+    color: #b3b2b2;
+  }
+
+  form {
+    width: 95%;
+    height: 600px;
+
+    display: flex;
+
+    margin: 50px auto 0;
+
+    box-shadow: 0px 5px 10px 5px #484c5033;
+    border-radius: 5px;
+  }
+}
+.equations {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.equation {
+  width: max-content;
+  padding: 5px 10px;
+  margin-bottom: 40px;
+
+  font-size: 2.125rem;
+  font-family: "Gill Sans MT", sans-serif;
+  color: #555454;
+
+  div,
+  input {
+    background-color: #6666663a;
+    border-radius: 10px;
+    padding: 0 10px;
+
+    font-size: 2.125rem;
+    font-family: "Gill Sans MT", sans-serif;
+    color: #555454;
+
+    border: none;
+    outline: none;
+  }
+
+  .label {
+    background-color: transparent;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    display: block;
+  }
+}
+
+.hints {
+  width: 50%;
+  height: 100%;
+  position: relative;
+
+  .cover {
+    height: 100%;
+    width: 100%;
+
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+
+    background: #eb8759;
+    // border-radius: 0 5px 5px 0;
+    border-radius: 0 0 5px 0;
+
+    color: #fff;
+    font-size: 2.125rem;
+    font-family: "Gill Sans MT", sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s;
+
+    &:hover {
+      background: #f06c2f;
+      font-size: 2.425rem;
+    }
+  }
+
+  .hint {
+    width: 100%;
+    height: 33.3%;
+
+    border: 5px solid #eb875995;
+
+    display: flex;
+
+    box-sizing: border-box;
+    padding: 50px 10px;
+
+    font-family: "Gill Sans MT", sans-serif;
+
+    .sircle {
+      height: 40px;
+      min-width: 40px;
+
+      margin-right: 20px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: #eb8759;
+      border-radius: 50%;
+
+      font-size: 2.125rem;
+      color: #fff;
+    }
+
+    &__text {
+      font-size: 2.125rem;
+      color: #eb875995;
+    }
+  }
+
+  .up_part {
+    border-radius: 0 5px 0 0;
+  }
+
+  .down_part {
+    border-radius: 0 0 5px 0;
+  }
+}
