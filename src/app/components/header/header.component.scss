@@ -15,6 +15,7 @@
   width: 59px;
   transition: 0.5s;
   background-image: url(../../../assets/icons/hamburger.svg);
+  cursor: pointer;
 
   &:hover {
     opacity: 0.6;
@@ -33,4 +34,6 @@
   color: #b3b2b2;
 
   font-family: "Gill Sans MT", sans-serif;
+
+  cursor: default;
 }
