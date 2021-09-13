@@ -1,1 +1,52 @@
-<p>game works!</p>
+<main>
+  <p class="text">find equation of line on inetrsection of two planes.</p>
+  <form>
+    <div class="equations">
+      <div class="equation">
+        <div class="label">first plane equation:</div>
+        <div class="">{{ firstPlane }}</div>
+      </div>
+      <div class="equation">
+        <div class="label">second plane equation:</div>
+        <div>{{ secondPlane }}</div>
+      </div>
+      <div class="equation">
+        <label class="label" for="answer">answer</label>
+        <input
+          type="answer"
+          name="answer"
+          id="answer"
+          placeholder="Write your answer here"
+        />
+      </div>
+    </div>
+    <div class="hints">
+      <div class="hint up_part">
+        <div class="sircle">1</div>
+        <div class="hint__text">
+          To find equation of line you need to solve the system of equations
+        </div>
+      </div>
+      <div class="hint">
+        <div class="sircle">2</div>
+        <div class="hint__text">
+          The equations in the system is plane equations
+        </div>
+      </div>
+      <div class="hint down_part">
+        <div class="sircle">3</div>
+        <div class="hint__text">
+          To solve the system of equations you may use the Gauss method
+        </div>
+      </div>
+      <div
+        *ngIf="hints != 0"
+        [ngStyle]="{ height: height }"
+        class="cover"
+        (click)="getHint()"
+      >
+        Ckick to get a hint
+      </div>
+    </div>
+  </form>
+</main>
