@@ -36,6 +36,7 @@ main {
 
 .equation {
   width: max-content;
+  min-width: 390px;
   padding: 5px 10px;
   margin-bottom: 40px;
 
@@ -140,5 +141,27 @@ main {
 
   .down_part {
     border-radius: 0 0 5px 0;
+  }
+}
+
+.answer-button {
+  height: 50px;
+  width: 200px;
+
+  background-color: #f06c2f;
+  border: 1px solid #f06c2f;
+  border-radius: 5px;
+
+  font-size: 1.365rem;
+  text-transform: capitalize;
+  color: #fff;
+
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: #eb8759;
+    border: 1px solid #eb8759;
+    box-shadow: 0 0 2px 2px #f06c2f;
   }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EquationService } from '../../services/equation.service'
 
 @Component({
   selector: 'app-game',
@@ -6,12 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./game.component.scss']
 })
 export class GameComponent implements OnInit {
-  firstPlane = "A1x + B1y + C1z + D1 = 0";
-  secondPlane = "A2x + B2y + C2z + D2 = 0";
+  firstPlane: string;
+  secondPlane: string;
   hints = 1;
   height = `${100/this.hints}%`;
 
-  constructor() { }
+  constructor(private equation: EquationService) {
+    this.firstPlane = equation.getEquation();
+    this.secondPlane = equation.getEquation();
+  }
 
   ngOnInit(): void {
   }
